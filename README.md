@@ -9,13 +9,11 @@ The name is: **Frontend Programming**.
 - style.php
 
 ### 1. BASIC HTML5 AND CSS3
-1.1 Introduction to PHP<br>
-1.2 The development environment<br>
-1.3 
 
 ### 2. BASIC JAVASCRIPT
+2.1 introduction to javascript
 
 ### 3. ADVANCED JAVASCRIPT
-3.1 MySQL
+
 
 ### 4. TYPESCRIPT
