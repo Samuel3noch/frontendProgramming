@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabelen</title>
+</head>
+<body>
+    <script>
+            // In de opdracht vragen ze om een "var" maar ik ga "let" en "const" gebruiken.
+        let firstName = "Carl"; // Dit is een string.
+        let lastName = "Petersen"; // Dit is een string.
+        let schoolFee = 1000; //Dit is een integer.
+        let bookMoney = 100; // Dit is een integer.
+        
+        let amount = schoolFee + bookMoney; // Hier maak ik een nieuwe blok met de informatie van "schoolFee en bookMoney" samen wordt het amount.
+        
+        let studentFinancing = 600; // Dit is een integer.
+        
+        let total = amount - studentFinancing; // Hier bereken  
+
+        const fullName =  firstName + " " + lastName;
+
+        document.write(
+            "<p>Assignment 8:</p>" + fullName + 
+            "<br>Totaal te betalen: " + total + "<br>"
+        );
+
+        /* 
+        Het verschil tussen document.write en console.log is het volgende:
+        
+        document.write: Zorgt ervoor dat wat jij gecodeerd hebt direct te vinden is op de webpage.
+
+        console.log: Zorgt ervoor dat wat jij gecodeerd hebt direct te vinden is in de console.
+        */
+
+            // Dit is het begin van opdracht 9.
+
+            // ik heb all mijn variabelen gedeclareerd en een waarde gegeven waarvan ik dacht dat ze passen.
+        firstName = "Zakaria"; //string
+        lastName = "Bolt"; //string
+        let figureNetherlands = 9; //integer
+        const teachingMaterialNetherlands = "Netherlands: "; // const betekent dat deze variable niet meer veranderd kan worden.
+        let figureEnglish = 8;
+        const teachingMaterialEnglish = "English: ";
+        let figureMath = 7;
+        const teachingMaterialMath = "Math: "
+        
+        const som = figureEnglish + figureMath + figureNetherlands; // Ik tel elk cijfer op en deel het door 3 zo krijg ik mijn gemiddelde.
+        const average = som / 3;
+
+        let fullName2 = firstName + " " + lastName;
+        document.write(
+            "<p>Assignment 9:</p>" + 
+            fullName2  + "<br>" +
+            teachingMaterialNetherlands + figureNetherlands + "<br>" +
+            teachingMaterialEnglish + figureEnglish + "<br>" +
+            teachingMaterialMath + figureMath + "<br>" + "<br>" +
+            "Average: " + average
+        );
+
+    </script>
+</body>
+</html>

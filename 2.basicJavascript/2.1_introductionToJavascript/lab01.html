@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 01</title>
+        <!-- Dit script werkt met variabelen
+        auteur: Sem Ntoto
+        datum: 10-DEC-2025
+        -->
+</head>
+<body>
+    <h2>lAB 01</h2>
+    <h3>Factuur</h3>
+    <script> 
+        let customerName = prompt("Enter your own name");
+        let number = parseInt(prompt("number of books to order?"));
+        let title = "Javascript";
+        let price = 29.90;
+        let amount = number * price;
+        let vat = amount / 100 * 6;
+        let inclusiefPriceBtw = amount + vat;
+
+        document.write("<br> Bedankt voor je bestelling: " + customerName);
+        document.write("<br>Book title is: " + title);
+        document.write("<br>quantity to order: "  + number);
+        document.write("<br> Price per book: " + price.toFixed(2));
+        document.write("<br>The amount is: " + amount.toFixed(2));
+        document.write("<br>VAT: " + vat.toFixed(2));
+        document.write("<br>Total including VAT is:" + inclusiefPriceBtw.toFixed(2));
+        /*
+         okey we gaan een kort verslag schrijven om te vertellen wat ik hier heb gedaan:
+
+         in de let elementen hebben we alle booleans/integers/strings vervolgens
+         hebben we een som gerekend voor de ammount(bedrag), vat(btw) en
+         een waar het bedrag inclusief btw is(het totale dus).
+
+        Het moment dat we document.write zijn gaan gebruiken hebben ik verschillende dingen
+        gedeclareerd. We hebben de lets van eerdere tekst erbij gepakt en samen gevoegd in de string.
+        Dit doen we zodat een line van document.write een geheel word. 
+        Na dat wij bijvoorbeeld prijs willen declareren gebruiken 
+        we de (.tofixed(2)) om 2 cijfers achter de koma te nemen en het af te ronden.
+        
+        */
+    </script>
+</body>
+</html>
