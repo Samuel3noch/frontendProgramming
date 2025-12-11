@@ -6,7 +6,7 @@ The name is: **Frontend Programming**.
 # Mapstructure.
 
 - index.php
-- style.php
+- style.css
 
 ### 1. BASIC HTML5 AND CSS3
 
