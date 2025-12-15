@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +7,79 @@
 </head>
 <body>
     <script> 
-
         let name = "Carl";
-        let adress = "Kruislaan 111";
-            // Typeof is een manier om de datatype te bekijken van een variabel.
+        let address = "Kruislaan 111";
+            // Met typeof kun je zien welk datatype een variabele heeft.
+            // In dit geval is het een string, omdat het tekst is.
         console.log("Assignment 10: Datatype of name is: " + typeof name);
 
-            // compulsoryEducation = Leerplichtig
+
+            // compulsoryEducation = leerplichtig
         let compulsoryEducation = true;
-        var adult = false;
-            // zoals eerder aangegeven gebruiken we typeof om de datatype te bekijken van een variebel.
-            // in dit voorbeeld is de datatype een boolean (die kunnen alleen true or false zijn).
-            // je kan dit bekijken op de console.log (snel tiets is "crtl + shift + J").
-        console.log("Assignment 11: Datatype of Compulsory Education is: " + typeof compulsoryEducation);
-        
+        let adult = false;
+            // Met typeof kun je zien welk datatype een variabele heeft.
+            // In dit voorbeeld is het datatype boolean.
+            // Een boolean kan alleen true of false zijn.
+        console.log("Assignment 11: Datatype of compulsoryEducation is: " + typeof compulsoryEducation);
+
+
         let temperature = -10;
-            // De datatype van temperature is een nummer en dat valt onder een integer.
-        console.log("Assignment 12: Datatype of temperatuur is: " + typeof temperature);
+            // De waarde is een number.
+            // Dit is een integer, omdat het een heel getal is (geen decimalen).
+        console.log("Assignment 12: Datatype of temperature is: " + typeof temperature);
+
         
         let VAT = 0.19 * 100;
-            // De datatype van VAT is in dit geval weer een nummer,
-            // omdat er ook nummers staan in de variabel.
-        console.log("Assignment 13: Value of VAT is: " + typeof VAT);
+            // VAT is een number, omdat er met getallen wordt gerekend.
+            // 0.19 * 100 = 19
+        console.log("Assignment 13: Value of VAT is: " + VAT);
+
 
         let string = "33445";
         let result = parseInt(string);
-            // met paraseInt kan je een tekst veranderen naar een ander datatype.
-        console.log("Assignment 14: parseInt(string) Result is: " + typeof result);
+            // Met parseInt() zet je een tekst (string) om naar een geheel getal (integer).
+        console.log("Assignment 14: parseInt(string) result is: " + typeof result);
 
-        let string1 = "3.3445";
-        let result1 = parseFloat(string);
-            // met parsefloat() maak je conversies van tekst naar float datatypes.
-            // wat zijn float datatypes? computernummers die getallen met decimaal opslaan.
-        console.log("Asignment 15: parseFloat(string) result is: " + typeof result1);
-        
-        
+
+        string = "3.3445";
+        result = parseFloat(string);
+            // Met parseFloat() zet je tekst (string) om naar een getal met decimalen (float).
+            // Een float is een getal dat cijfers achter de komma kan hebben.
+        console.log("Assignment 15: parseFloat(string) result is: " + typeof result);
+
+
+        float = 3.3445;
+        result = parseInt(float);
+            // Met parseInt() zet je een float om naar een geheel getal (integer).
+            // Alles achter de komma wordt verwijderd, er wordt niet afgerond.
+        console.log("Assignment 16: parseInt(float) result is: " + typeof result);
+
+
+        float = 3.3445;
+        result = float.toString();
+            // Met toString() zet je een getal (float of integer) om naar tekst (string).
+        console.log("Assignment 17: float.toString() result is: " + typeof result);
+
+
+        float = 3.3445;
+        result = float.toFixed(2);
+            // Met toFixed(2) rond je het getal af op 2 decimalen.
+            // De uitkomst wordt opgeslagen als een string, niet als een number.
+        console.log("Assignment 18: float.toFixed(2) result is: " + typeof result);
+
+
+        let two;    
+            // De variabele 'two' is nog niet ingevuld (undefined).
+            // Als een variabele geen waarde heeft, is het datatype 'undefined'.
+        console.log("Assignment 19: Datatype of let two: " + typeof two);
+
+
+        let one = 1;
+        let three = one * two; 
+            // Let op: 'two' is nog niet gedefinieerd, dus 'three' wordt NaN (Not a Number).
+        console.log("Assignment 20: Value of three is: " + three);
+
+
     </script>
-</body>
+</body> 
 </html>

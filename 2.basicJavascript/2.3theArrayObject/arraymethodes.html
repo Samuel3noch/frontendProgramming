@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methodes</title>
+</head>
+<body>
+    <script>
+            // Moderne array met alle studentennamen
+        let students = ['Zakaria', 'Albert', 'Hamsa', 'Mike', 'Pieter'];
+
+            // Laat zien hoeveel namen er in de array zitten en de namen zelf
+        console.log('Assignment 24: Students: ', students);
+
+
+        team = students;
+            // De variabele 'team' krijgt dezelfde array als 'students'.
+            // Beide variabelen verwijzen nu naar dezelfde array.
+        console.log('Assignment 25: Team: ', team);
+
+
+        team[0] = 'Umut';
+            // Het eerste element van de array wordt aangepast.
+            // Omdat 'team' en 'students' naar dezelfde array verwijzen,
+            // verandert de naam ook in de 'students' array.
+
+        console.log('Assignment 26: Element [0] has been changed: ', students);
+
+
+        students.shift();
+            // Met shift() verwijder je het eerste element uit de array.
+            // De rest van de elementen schuift één plek naar voren.
+
+        console.log('Assignment 27: Result of shift is: ', students);
+
+
+        students.unshift('Jozef', 'Umut');
+            // Met unshift() voeg je één of meerdere nieuwe elementen toe
+            // aan het begin van de array.
+            // De bestaande elementen schuiven naar rechts.
+
+        console.log('Assignment 28: Result of unshift is: ', students);
+
+
+        students.pop();
+            //  Met pop() verwijderen je het laatste element uit de array.
+            
+        console.log('Assignment 29: Result of pop is: ', students);
+
+
+        students.push('Pieter', 'David');
+            // Met push() voeg je een of meerdere elementen toe.
+            // aan het einde van de array.
+            // nieuwe array word langer.
+
+        console.log('Assignment 30: Result of push is: ', students);
+
+
+            // Met splice() kun je elementen uit een array verwijderen en opslaan in een nieuwe array.
+        klas = students.splice(2, 4);
+            // Vanaf index 2 worden 4 elementen uit 'students' gehaald.
+            // Deze elementen komen in de nieuwe array 'klas' terecht.
+
+        console.log('Assignment 31: Result:\nstudents: ', students, '\nclass: ', klas);
+
+
+        students.sort();
+            // Met sort() worden de elementen in de array alfabetisch gesorteerd.
+            // De originele array wordt direct aangepast.
+
+        console.log('Assignment 32: Result of sort is:', students);
+
+
+    </script>
+</body>
+</html>

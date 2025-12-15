@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lengte naar feet</title>
+</head>
+<body>
+    <script> 
+        // Definieer de conversiefactoren
+        let foot = 0.3048; // 1 foot = 0.3048 meter
+        let meter = 3.28084; // 1 meter = 3.28084 feet
+
+        // Vraag de gebruiker zijn lengte in meters
+        let fullLength = prompt("Your length in meters is?");
+
+        // Zet de lengte om naar feet
+        let fullLengthFoot = fullLength * meter;
+
+        // Rond af op 2 decimalen en toon het resultaat
+        document.write("Your length in feet is: " + fullLengthFoot.toFixed(2));
+    </script>
+</body>
+</html>
