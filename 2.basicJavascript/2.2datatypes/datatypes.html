@@ -7,12 +7,40 @@
 </head>
 <body>
     <script> 
+
         let name = "Carl";
         let adress = "Kruislaan 111";
             // Typeof is een manier om de datatype te bekijken van een variabel.
-        console.log(
-            "Assignment 10: Data type of name is: " + typeof name);
+        console.log("Assignment 10: Datatype of name is: " + typeof name);
 
+            // compulsoryEducation = Leerplichtig
+        let compulsoryEducation = true;
+        var adult = false;
+            // zoals eerder aangegeven gebruiken we typeof om de datatype te bekijken van een variebel.
+            // in dit voorbeeld is de datatype een boolean (die kunnen alleen true or false zijn).
+            // je kan dit bekijken op de console.log (snel tiets is "crtl + shift + J").
+        console.log("Assignment 11: Datatype of Compulsory Education is: " + typeof compulsoryEducation);
+        
+        let temperature = -10;
+            // De datatype van temperature is een nummer en dat valt onder een integer.
+        console.log("Assignment 12: Datatype of temperatuur is: " + typeof temperature);
+        
+        let VAT = 0.19 * 100;
+            // De datatype van VAT is in dit geval weer een nummer,
+            // omdat er ook nummers staan in de variabel.
+        console.log("Assignment 13: Value of VAT is: " + typeof VAT);
+
+        let string = "33445";
+        let result = parseInt(string);
+            // met paraseInt kan je een tekst veranderen naar een ander datatype.
+        console.log("Assignment 14: parseInt(string) Result is: " + typeof result);
+
+        let string1 = "3.3445";
+        let result1 = parseFloat(string);
+            // met parsefloat() maak je conversies van tekst naar float datatypes.
+            // wat zijn float datatypes? computernummers die getallen met decimaal opslaan.
+        console.log("Asignment 15: parseFloat(string) result is: " + typeof result1);
+        
         
     </script>
 </body>
