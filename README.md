@@ -11,8 +11,8 @@ The name is: **Frontend Programming**.
 ### 1. BASIC HTML5 AND CSS3
 
 ### 2. BASIC JAVASCRIPT
-2.1 introduction to javascript
-2.2 Datatypes
+2.1 introduction to javascript <br>
+2.2 Datatypes <bt>
 2.3 The Array Object
 2.4 
 
