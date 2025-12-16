@@ -12,9 +12,9 @@ The name is: **Frontend Programming**.
 
 ### 2. BASIC JAVASCRIPT
 2.1 introduction to javascript <br>
-2.2 Datatypes <bt>
-2.3 The Array Object
-2.4 
+2.2 Datatypes <br>
+2.3 The Array Object <br>
+2.4   <br>
 
 ### 3. ADVANCED JAVASCRIPT
 
