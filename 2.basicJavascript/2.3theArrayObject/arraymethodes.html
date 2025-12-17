@@ -69,9 +69,73 @@
             // Met sort() worden de elementen in de array alfabetisch gesorteerd.
             // De originele array wordt direct aangepast.
 
-        console.log('Assignment 32: Result of sort is:', students);
+        console.log('Assignment 32: Result of sort is: ', students, klas);
 
 
+        students.reverse();
+            // Met reverse() wordt de volgorde van de elementen omgekeerd.
+            // Het laatste element wordt het eerste en andersom.
+
+        console.log('Assignment 33: Result of reverse is: ', students, klas);
+
+
+        index = students.indexOf('Jozef');
+            // Met indexOf() zoek je naar een element in een array.
+            // De methode geeft de positie (index) terug.
+            // Als het element niet bestaat, krijg je -1.
+
+        console.log('Assignment 34: Result of indexOf Jozef is: ', index);
+
+
+        delete klas[2];
+            // Met delete verwijder je de waarde van een specifiek element in de array.
+            // De plek (index) blijft bestaan en wordt 'empty'.
+
+        console.log('Assignment 35: Result of delete: ', klas);
+
+
+            // Met typeof check je welk datatype een variabele of element heeft.
+        console.log('Assignment 36: Datatype from deleted element is: ', typeof klas[2]);
+
+
+        klas.splice(2, 1);
+            // Met splice() verwijder je een element volledig uit de array.
+            // Index 2 betekent het derde element.
+            // 1 betekent dat er één element wordt verwijderd.
+            // De array wordt korter en de indexen schuiven op.
+
+        console.log('Assignment 37: Deleting the whole element: ', klas);
+
+
+        index = students.indexOf('Jozef');
+            // Zoek de index van de student 'Jozef' in de array.
+
+        students.splice(index, 1);
+            // Verwijder de student op die index uit de array.
+            // De array wordt korter en de overige elementen schuiven op.
+
+        console.log('Assignment 38: Deleting a specific student: ', students);
+
+
+        klas2 = klas.slice();
+            // Met slice() maak je een kopie van de array.
+            // De originele array blijft hetzelfde.
+
+        console.log('Assignment 39: Result of a copy: ', klas2);
+
+
+        let myString = klas.join('|');
+            // Met join() zet je alle elementen van een array om naar één string.
+            // Het teken '|' wordt gebruikt als scheiding tussen de elementen.
+
+        console.log('Assignment 40: Result of join: ', myString);
+
+
+        let myArray = myString.split('|');
+            // Met split() zet je een string weer om naar een array.
+            // Het teken '|' wordt gebruikt als scheiding.
+
+        console.log('Assignment 41: Result of split:', myArray);
     </script>
 </body>
 </html>

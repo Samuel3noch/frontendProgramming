@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 03</title>
+</head>
+<body>
+    <section> 
+        <script> 
+
+                // Dit is een array met de naam testArray
+            let testArray = ['een', 'twee', 3, 'vier'];
+
+                // Met push() voegen we een nieuw element toe aan het einde van de array
+            testArray.push(5);
+
+                // Laat zien wat er in de array zit
+            console.log(testArray); // ['een', 'twee', 3, 'vier', 5]
+
+                // Met typeof check je het datatype van een element
+            console.log('Datatype is:', typeof testArray[4]); // number
+
+                // Met pop() verwijder je het **laatste element** van de array
+            testArray.pop(); // Verwijdert de lege plek of het laatste element
+
+            console.log(testArray); // ['een', 'twee', 3, 'vier']
+            
+                // Met unshift() voeg je één of meerdere nieuwe elementen toe aan het **begin** van de array
+                // De bestaande elementen schuiven automatisch één plek naar rechts
+            testArray.unshift('nul');
+
+            console.log(testArray); // Resultaat: ['nul', 'een', 'twee', 3, 'vier']
+
+                // Met delete verwijder je een specifiek element uit de array.
+                // Het element verdwijnt, maar de plek blijft bestaan als 'empty'.
+            delete testArray[0];
+
+                // Controleer het datatype van het verwijderde element
+            console.log('Datatype [0] is:', typeof testArray[0]); // undefined
+
+                // Met shift() verwijder je het eerste element uit de array
+            testArray.shift();
+
+                // Laat zien wat er nu in de array zit
+            console.log(testArray); // ['een', 'twee', 3, 'vier']
+
+                // Met splice() kun je één of meerdere elementen volledig verwijderen
+                // Vanaf index 1 verwijderen we 1 element
+            testArray.splice(1, 1);
+
+            console.log(testArray); 
+                // De array is nu korter en alle elementen schuiven op
+
+                // Vanaf index 2 verwijderen we opnieuw 1 element
+            testArray.splice(2, 1);
+
+            console.log(testArray); 
+                // De array is weer korter en de volgorde blijft correct
+
+
+
+        </script>
+    </section>
+</body>
+</html>
